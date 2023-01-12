@@ -44,6 +44,10 @@ body{
     grid-template-columns: 1fr 4fr;
 }
 
+.site-logo{
+    text-decoration: none;
+}
+
 .logo img {
     width: 50px;
 }
