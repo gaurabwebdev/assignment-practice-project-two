@@ -31,7 +31,7 @@ body{
 
 /* Header CSS */
 .header{
-    height: 95px;
+    padding: 25px 0;
     background: var(--purple);
     display: flex;
     align-items: center;
@@ -161,7 +161,7 @@ a.menu-links {
 }
 
 .blog-text {
-    margin: 0 15px;
+    margin: 0 0 0 15px;
 }
 
 .blog-text h4 {
@@ -290,9 +290,30 @@ a.menu-links {
 
 
 @media screen and (max-width: 768px){
+
+    .header-content {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .menu {
+        justify-content: center !important;
+        align-items: center !important;
+        margin-top: 20px;
+    }
+
     .player-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .course-img img, .blog-img img {
+        width: 90%;
+        height: 175px;
+    }
+
 }
 
 
@@ -309,9 +330,6 @@ a.menu-links {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .course-img img {
-        width: 85%;
-    }
 
     .rating-timing {
         justify-content: flex-start;
